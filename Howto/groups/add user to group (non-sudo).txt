@@ -1,0 +1,37 @@
+usermod -a -G group user
+
+ALTERNATIVE:
+
+cp /etc/group /etc/group.backup
+
+vigr
+
+Also edit the shadow group file with:
+
+vigr -s
+
+The vipw and vigr tools create backup files in /etc called passwd-, shadow-, group- and gshadow- with the same permissions and ownership as the originals.
+
+Tip:
+Do not edit the /etc/passwd, /etc/shadow, /etc/group and /etc/gshadow.
+Use vipw, vipw -s, vigr, vigr -s instead
+
+
+PUPPET SPECIFIC:
+Add user to puppet.
+
+
+REMOVE A USER FROM A GROUP
+https://unix.stackexchange.com/questions/29570/how-do-i-remove-a-user-from-a-group
+
+On Debian, the adduser package contains a deluser program which removes a user from a group if you pass both as arguments:
+
+deluser user group
+
+If your distribution doesn't have adduser, you can edit /etc/group and /etc/gshadow manually.
+
+vigr
+vigr -s
+
+
+

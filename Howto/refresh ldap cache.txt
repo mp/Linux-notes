@@ -1,0 +1,5 @@
+If an Active directory user attribute has been changed (e.g. UID) then refresh the LDAP cache on the on the server is that having problems. 
+
+https://www.rootusers.com/how-to-clear-the-sssd-cache-in-linux/ - do it for the user only
+
+Used to solve a login or no user name error on Hue server.

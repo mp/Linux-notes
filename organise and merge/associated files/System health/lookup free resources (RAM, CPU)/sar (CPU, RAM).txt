@@ -1,0 +1,18 @@
+Summary
+-------
+Look up histoic amount of CPU, RAM on a system
+
+Command
+-------
+sar		# Historic RAM
+sar -r		# Historic CPU
+
+Sample Output
+-------------
+
+Description
+-----------
+
+Tags
+----
+RAM

@@ -1,0 +1,26 @@
+Summary
+-------
+watch a commands output every two seconds for changes
+
+Example scenario
+----------------
+Polling a directory during ingress to check directory size (upload complete).
+
+
+Command
+-------
+watch -d du 		# polls du every 2 seconds displaying change in filesize
+			# -d highlights the differences (works fine without too)
+
+I cannot find a way to run a command upon change, other than:
+creating a script that diffs two outputs;
+using entr or inotifytools (recommended) [https://stackoverflow.com/questions/4060212/in-linux-how-do-i-run-a-shell-script-when-a-file-or-directory-changes]
+
+Sample Output
+-------------
+
+Description
+-----------
+
+Tags
+----

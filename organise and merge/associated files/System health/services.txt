@@ -1,0 +1,10 @@
+service name start|stop|restart|status		e.g. gitlab-ctl, service postgresql 
+
+sudo gitlab-ctl stop
+rstudio-server start
+sudo service postgresql stop
+sudo service neo4j-service start
+
+sudo service --status-all 			lists all running services
+
+ps aux | grep | kill 9				may be necessary if a service does not stop

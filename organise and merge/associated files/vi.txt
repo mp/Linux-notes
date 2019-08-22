@@ -1,0 +1,11 @@
+Comment a block of text: 
+press Esc , ctrl + v (visual block mode), up/down, Shift + i (capital I), insert the text, Esc Esc
+
+b to move back one word, w to move forward one word
+
+:%s/foo\|f00/bar/g
+
+.	# repeat last command
+
+Recording:
+qq@	# start, stop, repeat (try @ twice)

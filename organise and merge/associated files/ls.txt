@@ -1,0 +1,3 @@
+ls -lhS   		# sort by size
+
+ls -lt 		# sort by last modified (timestamp)

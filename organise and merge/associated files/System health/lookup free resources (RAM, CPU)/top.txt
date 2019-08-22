@@ -1,0 +1,18 @@
+Summary
+-------
+Top can be used for checking free memory
+
+Command
+-------
+top -M (human readable memory units)
+Press e to cycle through units (W to save preferences in ~/.toprc). Doesn't work in older versions of top.
+
+Sample Output
+-------------
+
+Description
+-----------
+
+Tags
+----
+RAM

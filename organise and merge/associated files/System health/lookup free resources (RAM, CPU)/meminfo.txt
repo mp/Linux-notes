@@ -1,0 +1,20 @@
+Summary
+-------
+Look up amount of free RAM on a system
+Check memory usage with /proc/meminfo file.
+Know that the /proc file system does not contain real files. They are rather virtual files that contain dynamic information about the kernel and the system.
+
+Command
+-------
+cat /proc/meminfo
+watch cat /proc/meminfo
+
+Sample Output
+-------------
+
+Description
+-----------
+
+Tags
+----
+RAM

@@ -1,0 +1,1 @@
+split -d -b 50M Test.iso Test.iso		# have to repeat the filename

@@ -1,0 +1,26 @@
+Summary
+-------
+emacs & vi command line shortcuts
+
+Command
+-------
+alt + . 				insert last argument of previous command
+!^ (first), !$ (last) or $_ (last)  	insert first or last argument of previous command 
+!*					all arguments (without command name of previous command	
+sudo !!					re-run previous command as sudo (!-1=!!, !-2, !-3, !-4) 
+
+Access the words of the previous command with !:n where n starts at 0 with the command name.
+!^ = !:1, next is !:2
+
+Emacs:
+alt-[1..n] & ctrl-alt y # select argument, paste (https://stackoverflow.com/questions/4009412/how-to-use-arguments-from-previous-command)
+
+
+Sample Output
+-------------
+
+Description
+-----------
+
+Tags
+----

@@ -1,0 +1,7 @@
+Log in to pfsense Webadmin
+Select Firewall -> Rules
+All the tabs (including USERS) refer to internal VLANs.
+
+select the USERS tab. Go to the bottom of the table and click on the + symbol to copy the rule (Python_web_server) which can be used to open a new port for another webserver. Alternatively, find another type of open port and modify that.
+
+A good way to test if software needs another port is to shutdown Hue, and use its port (8888) as an argument. This was done for the Python webserver.

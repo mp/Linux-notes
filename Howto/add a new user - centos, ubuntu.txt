@@ -1,0 +1,4 @@
+LOCAL VERSION:
+
+useradd -m <username>		: -m creates a home directory
+passwd <username>		: set password

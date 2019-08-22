@@ -1,0 +1,7 @@
+This boots a Linux virtual machine into a root shell for emergency fixes (e.g. a corrupt sudoers file).
+
+Hold shift while the machine is booting up.
+
+Edit the desired linux entry (in Ubuntu, select the line and press e to edit, and ctr-x to run but not save the modified line).
+
+Append " single" to the end of the line starting "linux "

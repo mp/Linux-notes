@@ -1,0 +1,28 @@
+BASH TRICKS (application independent)
+-------------------------------------
+
+AND, OR
+
+cd [folder] && ls || echo "folder does not exist"
+
+
+MULTIPLE TERMS
+
+ls *.{clean, records}
+
+
+NEGATIVE TERMS
+
+shopt -s extglob
+ls !(*.dat)	# anything that is not .dat
+
+for in list:
+for folder in A B
+do
+	ls $folder
+done
+
+More cool tricks: http://www.commandlinefu.com/commands/by/mayurpant + favourites
+
+python from the command line:
+echo –e “#run python from the command line\n\nfor r in range(r): print(‘a’)” | python

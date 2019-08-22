@@ -1,0 +1,18 @@
+Check existing tools list from online.
+Add names only first, Organise by tool type.
+
+CLfu provides a good template (see TEMPLATE.TXT), but is really just useful for cool specific- use chained commands (referenced 'cool tricks.txt'). In the question of whether to translate this entire list to CLFU, the answer is keep them as TXT and reference additional cool tricks on CLFU (1/2018).
+
+REMEMBER: Gitlab [Py / PyNotebook], Shell: txt [tool reference / task specific howto].
+All these online reference documents, written as tutorials are for others (Q4+,2019).
+
+Todo tools list (also see tools draft in outlook)
+---------------
+
+Categories? (or tags)
+
+House keeping: clearing space (TAGS: du, size, space, housekeeping, archiving)
+User management (TAGS: useradd, permissions)
+System health (TAGS: RAM check, logs, processes, services)
+Git (TAGS: Github,lab)
+Hadoop (TAGS: Hive)

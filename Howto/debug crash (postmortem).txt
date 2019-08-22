@@ -1,0 +1,3 @@
+last		# shows when user was last logged on
+dmesg | less (scroll to the bottom)
+less /var/log/syslog	# look for dozens of lines starting with /kernel:/ which indicates a kernel dump. Incident should occur just before this.

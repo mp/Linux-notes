@@ -1,0 +1,10 @@
+LOCAL VERSION:
+
+cp /etc/ssh/ssh_config /etc/ssh/ssh_config.backup
+
+vi /etc/ssh/ssh_config
+
+
+PUPPET VERSION:
+
+vi /etc/puppet/hieradata/common.yaml

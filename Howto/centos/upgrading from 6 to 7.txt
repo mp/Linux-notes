@@ -1,0 +1,24 @@
+Upgrade to latest minor revision available, and then uprgade to 7.
+See https://vexxhost.com/resources/tutorials/centos-6-to-centos-7-upgrade-procedure/
+
+
+---
+Additional:
+
+# https://tecadmin.net/how-to-upgrade-centos-6-to-latest-release/
+
+cat /etc/redhat-release
+yum clean all
+yum update
+reboot
+cat /etc/redhat-release
+
+# upgrades to latest version from the internet
+
+
+Creating an Offline YUM repository for LAN
+https://linuxtechlab.com/offline-yum-repository-for-lan/
+
+Creating a YUM repository from ISO & Online repo
+https://www.unixmen.com/add-dvd-to-yum-repository-in-centos-6/
+https://linuxtechlab.com/creating-yum-repository-iso-online-repo/

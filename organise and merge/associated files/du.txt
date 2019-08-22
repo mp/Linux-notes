@@ -1,0 +1,24 @@
+Summary
+-------
+Directory disk usage (human readable), sorted
+
+Command
+-------
+du -h				# print space of all subdirectories
+du -h --max-depth=1 | sort -hr	# Treesize: prints subdirectories sorted by size
+watch -d du 			# polls du every 2 seconds displaying change in directory size (see watch.txt)
+
+Sample Output
+-------------
+du -h --max-depth=1 | sort -hr
+20G   .
+10G   ./folder1
+8G    ./folder2
+2G    ./folder3
+
+Description
+-----------
+
+Tags
+----
+du, size, space, housekeeping, watch, sort

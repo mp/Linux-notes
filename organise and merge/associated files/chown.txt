@@ -1,0 +1,22 @@
+Summary
+-------
+Set a file or directory to a user and group
+
+Command
+-------
+chown user:group [directory]
+chown user:group [file]
+
+
+Sample Output
+-------------
+-rw-r--r-- 1 mayur admins 0 Aug 31 05:48 demo.txt
+
+Description
+-----------
+chown is to change the user and group
+chmod is to change file read write permissions (-rw-r--r--)
+
+Tags
+----
+chmod, chown, permissions, access

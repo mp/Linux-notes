@@ -1,0 +1,19 @@
+4 ways
+------
+1.
+ps -ef | grep -i hiveserver2	# or pgrep hiveserver2
+kill -9 {pid}			# kill -9 is not ignorable (default is -15, safe shutdown)
+ps -ef | grep -i hiveserver2	# re-run to check
+
+2.
+kill $(ps aux | grep '[p]ython csp_build.py' | awk '{print $2}')
+# https://stackoverflow.com/questions/3510673/find-and-kill-a-process-in-one-line-using-bash-and-regex
+
+killall takes the exact name of process as the argument whereas pkill can take partial or complete name.
+
+3.
+killall -r regexp
+
+4.
+pkill -9 '^python*'
+If you want find before pkill just use pgrep -l '^python*', or pgrep -l '^python*' | xargs kill -9 

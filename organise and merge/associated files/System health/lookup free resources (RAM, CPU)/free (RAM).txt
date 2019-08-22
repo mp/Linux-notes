@@ -1,0 +1,17 @@
+Summary
+-------
+Look up amount of free RAM on a system
+
+Command
+-------
+free -g/m	# -(g)igabytes or -(m)egabytes
+
+Sample Output
+-------------
+
+Description
+-----------
+
+Tags
+----
+RAM
