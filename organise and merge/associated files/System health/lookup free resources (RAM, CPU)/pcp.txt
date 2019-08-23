@@ -1,0 +1,19 @@
+Redhat performance co-pilot. It can be used to create graphs, and can replace other memory tools completely.
+
+service pcp [status / start / stop]
+
+pmstat -s 5
+pmcollect 
+pmatop
+pminfo
+pmchart
+
+e.g.
+pmstat -s 5 -t 15 	monitor 5 times every 15 seconds
+pmval -t 14 -s 5 mem.freemem
+
+pminfo -dt mem.freemem		(RH442 Lab book, p.49-60), remote X11 tool to create a live graph
+pmchart is a live analysis tool to track multiple graphs - useful. Runs in X11 (preference)
+
+Consider logging in via X11 SSH to run these graphing tools, unless using grafana to monitor multiple servers. 
+

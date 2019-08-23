@@ -1,0 +1,20 @@
+Dynamic tuning: maximum performance from 8am, energy saving from 8pm.
+(tuna is another tool for creating tuna profiles to monitor memory, cpu cores, running processes and the cgroup that they belong to.)
+
+tuned-adm active	shows active profile
+tuned-adm list		shows all profiles available
+tuned-adm recommend	Checks status and whether a VM and recommends a profile
+tuned-adm off		turns off tuned-adm, shows tuned-adm active as no profile active
+
+Example profiles:
+-----------------
+powersave
+balanced
+desktop
+virtual-guest
+virtual-host
+network-latency
+latency-performance
+throughput-performance
+
+

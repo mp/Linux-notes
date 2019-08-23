@@ -1,0 +1,11 @@
+System control
+
+/etc/proc/cpuinfo	less the file to get info
+/etc/proc/meminfo
+
+systcl -a 	All the parameters that can be tuned
+
+e.g. sysctl -a | grep icmp_echo
+
+systctl -w [parameter] = [value]
+e.g. systl -w net.ipv4.icmp_echo_ignore_all = 1		Stop echo facility

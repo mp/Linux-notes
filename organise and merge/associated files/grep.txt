@@ -1,1 +1,2 @@
 filename only: -l (e.g. find ./ | xargs grep -l "expression" | xargs vi)
+grep -e 	: multiple expressions

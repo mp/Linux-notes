@@ -1,7 +1,7 @@
 Summary
 -------
 Look up histoic amount of CPU, RAM on a system
-
+You can set sar to run in cron (RH442 Lab, notes: p.31, /etc/cron.d/sysstat)
 Command
 -------
 sar		# Historic RAM
@@ -16,3 +16,4 @@ Description
 Tags
 ----
 RAM
+
