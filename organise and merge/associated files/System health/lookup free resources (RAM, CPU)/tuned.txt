@@ -11,7 +11,7 @@ Example profiles:
 powersave
 balanced
 desktop
-virtual-guest
+virtual-guest		A tuned profile for VMs
 virtual-host
 network-latency
 latency-performance
