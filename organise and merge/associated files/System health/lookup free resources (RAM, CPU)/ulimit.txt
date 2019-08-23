@@ -1,0 +1,11 @@
+Limits resources used in the system. Ulimit runs on the current shell, but the module PAM ulimits activates ulimit persistently.
+
+/etc/security/limits.d/90-[user].conf		set limits per user
+ulimit hard nproc 16		limit user to 16 processes
+		
+/etc/security/limits.d/10-[group].conf		set limits per group
+[SERVICE]
+LimitNOFILES=32					limit number of open files to 32 for a service
+
+systemctl restart [service]			for changes to take effect
+

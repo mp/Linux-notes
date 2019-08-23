@@ -1,0 +1,22 @@
+Alternative to ulimit (RH442 Lab book, p.104). Allows limiting memory and CPU time per application.
+Kernel partitions available resources depending on the limit configuration.
+
+Limits CPU shares, memory usage, block device usage.
+
+E.g. limit application A to 1/3rd of CPU. Limit application 2 to 2/3rds of application. 
+
+systemd-cgtop
+A single command runs inside systemd-run --slice example.slice 10d	(10 days)
+
+Ability to control memory
+[Service]
+Slice=works.slice
+MemoryAccounting=true		Like the user/group limits for the Hadoop Hive queue
+MemoryLimit=1G			Like VMware virtual machines, but by application or user
+BlockIO*			Block storage restriction
+CPUShares=2048			CPU shares limit
+LimitNOFILE=64			Limit number of open files
+LimitNPROC=32			Limit number of processes
+		
+/etc/systemd/system/cpuload.service.d/10-service.conf	put services into a slice
+systemctl daemon-reload
