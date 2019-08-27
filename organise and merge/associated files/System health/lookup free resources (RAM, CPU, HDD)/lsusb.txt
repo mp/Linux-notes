@@ -1,0 +1,4 @@
+List USB devices
+
+lsusb -vv
+Print out USB device information.

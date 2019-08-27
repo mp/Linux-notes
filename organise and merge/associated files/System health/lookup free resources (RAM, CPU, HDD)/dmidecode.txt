@@ -1,0 +1,15 @@
+Gives information about the hardware.
+
+Fetches the features of the motherboard (like lscpu).
+It also fetches the BIOS version.
+It informs you of the number of memory slots.
+Fetches the server model and serial tags (useful when speaking to hardware vendors).
+
+How much memory can the motherboard support?
+
+Alternatively, check ls /sys/class/dmi/id/ for:
+board vendor
+bios date
+board_asset_tag
+board_serial
+chassis_asset_tag

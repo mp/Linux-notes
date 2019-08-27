@@ -1,0 +1,6 @@
+Traces system calls of the program.
+
+strace uname
+strace -c [pid]		trace to pid of running program
+
+ltrace -c [pid]		shows library function system call breakdown

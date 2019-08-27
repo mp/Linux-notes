@@ -1,5 +1,0 @@
-How many cores does a machine have?
-
-cat /proc/cpuinfo | grep "cpu cores"
-
-Or check VMware

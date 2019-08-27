@@ -5,6 +5,7 @@ tuned-adm active	shows active profile
 tuned-adm list		shows all profiles available
 tuned-adm recommend	Checks status and whether a VM and recommends a profile
 tuned-adm off		turns off tuned-adm, shows tuned-adm active as no profile active
+tuned-adm profile throughput-performance	Tune for small file performance (RH442, p.192)
 
 Example profiles:
 -----------------

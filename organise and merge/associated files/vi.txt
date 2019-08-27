@@ -9,3 +9,6 @@ b to move back one word, w to move forward one word
 
 Recording:
 qq@	# start, stop, repeat (try @ twice)
+
+search back:
+?[term]	# instead of /[term]

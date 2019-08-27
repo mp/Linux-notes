@@ -1,0 +1,11 @@
+System call profiling
+
+valgrind --tool=cachegrind cache1
+
+perf list
+perf stat -e cache-misses cache1	Stats on the event cache-miss
+
+Both show the number of cache misses (when an item is looked up but noot found) and cache hits
+(These can be used on running applications.)
+
+These tools can be used to profile cache use effectiveness (RH442, P.161)

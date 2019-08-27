@@ -1,0 +1,4 @@
+List PCI devices
+e.g. graphics cards, network cards
+
+lspci -vv	Even more verbose

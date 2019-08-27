@@ -1,0 +1,9 @@
+Set application priority level.
+
+nice [-+]n [command]		- to lower (lowest is -19), + to raise (highest is +20) 
+
+renice -n [pid]			adjust a running priority
+
+renice -19 $(cat /var/run/sshd.pid)	PID of the running sshd program
+
+Also set priorities with chrt.

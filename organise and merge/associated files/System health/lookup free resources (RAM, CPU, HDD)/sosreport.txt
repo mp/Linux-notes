@@ -1,0 +1,7 @@
+sosreport -l
+
+Creates a report that RedHat require when you contact their suppor team.
+
+Check this folder yourself stores a lot of readable information in an organised method.
+
+E.g. if someone asks to tune the system, run sosreport -l and look at the contents of the files for a picture of the hardware.

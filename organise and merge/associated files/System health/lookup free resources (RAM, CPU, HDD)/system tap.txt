@@ -1,0 +1,4 @@
+System tap is a C like language to interrogate the kernel.
+(kprobe will also tap into the kernel to see what to see what is doing.)
+
+System tap scripts are compiled into modules and loaded into the kernel.

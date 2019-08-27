@@ -1,0 +1,6 @@
+echo deadline > /sys/block/vda/queue/scheduler	default in RHEL 7
+echo cfq > /sys/block/vda/queue/scheduler	default in RHEL 6
+echo noop > /sys/block/vda/queue/scheduler	no op scheduler
+
+Disk retrieval schedulers like the 3 above allow choosing the best scheduler for prorgams. The is extreme performance tuning.
+

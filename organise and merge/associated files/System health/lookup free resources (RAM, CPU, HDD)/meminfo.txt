@@ -1,5 +1,6 @@
 Summary
 -------
+Know how much memory a machine has. Know what the maximum amount on the server is and how many slots are used (see dmidecode.txt). Is it connected through Northbridge, or directly to the CPU? Is it low latency (better?). Is it SMP or NUMA (latter is better).
 Look up amount of free RAM on a system
 Check memory usage with /proc/meminfo file.
 Know that the /proc file system does not contain real files. They are rather virtual files that contain dynamic information about the kernel and the system.

@@ -1,0 +1,16 @@
+How many cores does a machine have?
+
+lscpu (RH442, P.114)
+
+cat /proc/cpuinfo | grep "cpu cores"
+
+Or check VMware
+
+If you have 2 sockets, with 2 cores each, with 2 threads per core, you have 8 threads.
+The number of threads per core can be changed at the BIOS level (sometimes multhreading or hyperthreading do not always work well with all types of workload).
+
+Lists whether it has NUMA.
+Does it support virtualisation (VTX).
+L1d (data), L1i and L2 Cache.
+
+
