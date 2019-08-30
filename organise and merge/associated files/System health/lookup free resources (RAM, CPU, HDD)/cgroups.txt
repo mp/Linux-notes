@@ -20,3 +20,23 @@ LimitNPROC=32			Limit number of processes
 		
 /etc/systemd/system/cpuload.service.d/10-service.conf	put services into a slice
 systemctl daemon-reload
+
+See RH442 lab slides, p.254 for example of how to CPU shares for applications
+sudo sytemctl start cpuload1.service cpuload2.service
+sudo sytemctl enable cpuload1.service cpuload2.service
+sudo sytemctl set-property cpuload1.service CPUAccounting=yes
+sudo sytemctl set-property cpuload2.service CPUAccounting=yes
+systemctl daemon-reload
+systemd-cgtop		
+systemctl disable cpuload1.service cpuload2.service
+
+Application pinning is where applications are started on particular CPUs for the entire execution (RH442, p.257)
+[service]
+CPUAffinity="2-4"
+It is possible to make application exclusive to a dedicated CPU, which improves its performance.
+To see which CPUs an application is running on do:
+ps mo pid,comm, psr $(pgrep httpd)
+
+IRQbalance oneshot is another way of balancing application usage amongst CPU sets (/etc/sysconfig/irqbalance). See: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/performance_tuning_guide/sect-red_hat_enterprise_linux-performance_tuning_guide-performance_monitoring_tools-irqbalance
+
+
