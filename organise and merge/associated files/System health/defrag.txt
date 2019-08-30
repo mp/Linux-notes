@@ -1,0 +1,17 @@
+Defragmentation of rotational drives is still necessary to tune performance.
+
+xfs compensates for this, but not completely. RH442 Lab workbook, p.284 lists defragmentation tools that can be run every night (and for a given length of time, e.g. 10 minutes per night) to keep the drive in a degfragmented state.
+
+xfs:
+xfs_fsr -v -t 600	Run for 10 minutes (600 seconds)
+
+ext4:
+e4defrag -v /mnt/ext4			Defragment a mountpoint
+e4defrag -v /dev/sdb1			Defragment a partition
+e4defrag -v /home/user/directory	Defragment a directory
+
+See RH442 Lab Workbook exercise (RH442, p.292) for a defragmentation example.
+lsblk
+fdisk /dev/sdb1
+filefrag /mnt/sdb1/file
+xfs_db -c frag -r /dev/sdb1
