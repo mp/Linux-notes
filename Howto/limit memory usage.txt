@@ -1,0 +1,10 @@
+Limit a system to used 512MB
+
+/etc/systemd/system/memload.service.d/00-limit.conf
+
+[service]
+memoryLimit=512M
+
+... then restart systemd with:
+systemctl daemon-reload
+systemctl restart memload (RH442, p.222)

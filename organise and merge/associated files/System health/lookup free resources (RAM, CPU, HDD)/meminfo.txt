@@ -4,6 +4,7 @@ Know how much memory a machine has. Know what the maximum amount on the server i
 Look up amount of free RAM on a system
 Check memory usage with /proc/meminfo file.
 Know that the /proc file system does not contain real files. They are rather virtual files that contain dynamic information about the kernel and the system.
+Don't put more applications on the system than it can handle - put them onto another VM instead.
 
 Command
 -------

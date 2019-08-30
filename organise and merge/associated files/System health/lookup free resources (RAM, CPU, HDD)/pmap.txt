@@ -1,0 +1,3 @@
+pmap shows which libraries of a running application consume the most memory.
+
+pmap [pid]

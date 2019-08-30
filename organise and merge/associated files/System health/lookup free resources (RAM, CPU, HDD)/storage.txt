@@ -5,3 +5,7 @@ Are they RAID 1, 0 or RAID 10? Different storage and hardware cause different sp
 What the speed of the fibre links between remote storage? Is it fast ethernet, or 10GB or 40GB ethernet? The network connection effects storage speed (RH442, Ch. 5, Hardware Profiling). The interconnect on the motherboard will become a bottleneck: is it PCI, PCIX, PCI-E (x4, x16). What are the hyptohetical hardware limits of this, and the factors above?
 
 Profiling storage (RH442, p.127)
+
+Setting noatime in fstab prevents the access time from being recorded which can lead to a performance increase: http://en.tldp.org/LDP/solrhe/Securing-Optimizing-Linux-RH-Edition-v1.3/chap6sec73.html - this is used on mail server patitions.
+
+Also, consider SSD drives, or at least one SSD cacheing drive on the PowerEdge.

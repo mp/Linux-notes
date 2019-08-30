@@ -1,0 +1,5 @@
+UMA (uniform memory architecture) is old and allows access from a CPU to memory via an FSB.
+NUMA (non UMA) allows memory directly from a CPU to memory via a high-speed interconnect. This is more typical in multiprocessor, multicore systems.
+
+NUMA is preferred.
+

@@ -1,0 +1,1 @@
+These are stored in /etc/sysctl.conf (also in tuned profile).
