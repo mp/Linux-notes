@@ -1,0 +1,5 @@
+qperf					run on Machine A as listener
+qperf machineA	tcp_bw udp_bw		run on Machine B, testing tcp and udp bandwidth tests
+					Reports the speeds, e.g. 120MB/sec
+
+May have to open the firewall for qperf incoming connections on the server (RH442, P.292)
