@@ -3,9 +3,14 @@ Dynamic tuning: maximum performance from 8am, energy saving from 8pm.
 
 tuned-adm active	shows active profile
 tuned-adm list		shows all profiles available
-tuned-adm recommend	Checks status and whether a VM and recommends a profile
+tuned-adm recommend	Checks status (e.g. whether a VM) and recommends a profile
 tuned-adm off		turns off tuned-adm, shows tuned-adm active as no profile active
 tuned-adm profile throughput-performance	Tune for small file performance (RH442, p.192)
+
+e.g. RH442, p.377
+tuned-adm recommend	=> virtual-guest	Suggested because it is a VM
+tuned-adm profile virtual-guest
+tuned-adm active	=> Current active profile: virtual guest
 
 Example profiles:
 -----------------
@@ -13,9 +18,11 @@ powersave
 balanced
 desktop
 virtual-guest		A tuned profile for VMs
-virtual-host
+virtual-host		A tuned profile for servers hosting VMs (RH442, p.368)
 network-latency
 latency-performance
 throughput-performance
+powersave		Switch off bluetooth, soundcard. The powertop application is a top shows power consupmption of the system with devices (e.g. keyboard, soundcard, bluetooth - it shows what which devices wake up the system).
 
-
+powertop2tuned -m powersave powetop	Runs powertop, analyses the system and creates a suitable tuned profile based on the analysis
+tuned-adm profile powetop		Apply the powetop profile. RH442 Lab, p.364. Useful for home lab power saving!

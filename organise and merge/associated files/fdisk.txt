@@ -1,0 +1,15 @@
+Use fdisk to create a 256MB partition
+
+lsblk			List block devices. blkid lists UUIDs
+fdisk /dev/sdb		run fdisk on this device
+p			print partition table
+n			Create a partition
+p			Primary partition
+(Accept default partition number and sector number)
+Last sector: +256M	Set size to 256MB
+l			List filsystem codes
+(enter filesystem code)
+p			Print partition table
+w			Save
+
+.. then add it to fstab.

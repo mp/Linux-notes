@@ -8,6 +8,20 @@ E.g. limit application A to 1/3rd of CPU. Limit application 2 to 2/3rds of appli
 systemd-cgtop
 A single command runs inside systemd-run --slice example.slice 10d	(10 days)
 
+lscgroups
+View definitions for for each machine
+
+libvert
+An API for interacting with cgroup definitions (RH442, p.370)
+virsh schedinfo desktop		Instruct cgroups to use given profile for a machine
+virsh blktune desktop
+virsh memtune desktop
+virsh cpuinfo desktop		View CPU affinity (pinning) of VMs to CPUs (e.g. YYYY - all 4 CPUs, RH442, p.393: /etc/systemd/system/cpuload.service.d)
+virsh memtune desktop --hard-limit 1g	Give desktop 1GB of RAM
+virsh cpupin desktop 0 8	Configure VM vCPU 0 to run on hypervisor 8
+virsh schedinfo desktop cpu_shares 100	Set 100 shares for desktop VM
+				More examples with virsh in RH442, p.375
+
 Ability to control memory
 [Service]
 Slice=works.slice
@@ -38,5 +52,4 @@ To see which CPUs an application is running on do:
 ps mo pid,comm, psr $(pgrep httpd)
 
 IRQbalance oneshot is another way of balancing application usage amongst CPU sets (/etc/sysconfig/irqbalance). See: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/performance_tuning_guide/sect-red_hat_enterprise_linux-performance_tuning_guide-performance_monitoring_tools-irqbalance
-
 

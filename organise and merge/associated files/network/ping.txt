@@ -1,1 +1,3 @@
 ICMP protocol
+
+If the ping time is 2000ms (2s) then the network is suffering from high latency.

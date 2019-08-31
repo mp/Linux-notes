@@ -1,3 +1,5 @@
-Out if memory killer starts terminating programs when the system runs out of memory.
+Out-of-memory killer starts terminating programs when the system runs out of memory.
 (A whitelist of programs that be made of programs that should not be terminated.)
 Do not let a system reach this state: put excess applications onto different machines.
+
+RH442 Lab p.393: set httpd to never be terminated by OOM killer.

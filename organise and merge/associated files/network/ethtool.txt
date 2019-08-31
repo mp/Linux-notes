@@ -1,1 +1,5 @@
 ethtool eth0		Shows interface information
+
+Wake-on-LAN will keep the server powered off, but the network card on (which then powers on the rest of the server (RH442, p.350).
+
+ethool -s eth01 wol d	Wake-on-lan (d)isable. Alternatively in ifcfg-* files, or tuned profile
