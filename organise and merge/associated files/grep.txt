@@ -1,2 +1,8 @@
 filename only: -l (e.g. find ./ | xargs grep -l "expression" | xargs vi)
-grep -e 	: multiple expressions
+
+multiple expressions:
+grep -e string1 -e string2 *.pl
+grep -E 'word1|word2' *.rtf
+egrep "word1|word2" *.c
+grep -e 'warning|error|critical' /var/log/messages
+egrep -wi --color 'warning|error|critical' /var/log/messages # colour options: https://www.cyberciti.biz/faq/searching-multiple-words-string-using-grep/
