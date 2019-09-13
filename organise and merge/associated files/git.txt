@@ -1,6 +1,6 @@
 Summary
 -------
-git add, git status, git commit, git log
+git clone, git pull, git add, git rm, git status, git commit --amend, git log
 
 Command
 -------
