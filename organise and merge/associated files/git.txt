@@ -1,9 +1,10 @@
 Summary
 -------
-git clone, git pull, git add, git rm, git status, git commit --amend, git log
+Commands for every day git usage
 
 Command
 -------
+git clone, git pull, git add -A, git rm, git status, git commit --amend, git log
 
 Sample Output
 -------------
