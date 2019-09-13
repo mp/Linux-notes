@@ -1,6 +1,6 @@
 filename only: -l (e.g. find ./ | xargs grep -l "expression" | xargs vi)
 
-multiple expressions:
+multiple OR expressions (there is no AND so chain multiple greps):
 grep -e string1 -e string2 *.pl
 grep -E 'word1|word2' *.rtf
 egrep "word1|word2" *.c
