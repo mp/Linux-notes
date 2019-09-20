@@ -1,0 +1,13 @@
+dmesg -T 	(timestamp instead of microseconds from boot)
+
+Information on memory
+
+Information on CPUs
+
+Information on storage devices (and their patitions)
+
+Information on network
+
+
+
+
