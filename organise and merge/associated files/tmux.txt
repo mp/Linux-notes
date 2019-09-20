@@ -4,7 +4,7 @@ Why Tmux?
 Introduces multiple panes per tab (useful for context switching workflow)
 (Allows a well organised vertical display screen for a comfortable working environment with context)
 
-2. Attach or rettach sessions if the break (works until server reboots):
-Useful for a PuTTY scenario where the session is broken upon a restart - attach and rettach a terminal to a permanently live remote server (also consider SuperPutty or multiple windows)
+2. Attach or re-attach sessions if the break (works until server reboots):
+Useful for a PuTTY scenario where the session is broken upon a client restart - attach and re-attach a terminal to a permanently live remote server (also consider SuperPutty or multiple windows)
 
 Point two is the most useful. If the scenario allows it, see: https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
